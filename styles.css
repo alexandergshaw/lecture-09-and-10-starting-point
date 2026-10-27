@@ -74,6 +74,14 @@ h3 { font-size: 25px; margin-block: 13px; }
 .site-footer .wordmark { font-size: 22px; }
 .site-footer p, .site-footer > a:last-child { font-size: 11px; color: var(--muted); }
 
+/*
+  WAVE follow-up: when a finding appears to involve color or another visual
+  style, inspect the affected element's class and trace it to the rule above.
+  Change the real rule that causes the finding, then save, refresh, and rerun
+  WAVE to verify the original issue is resolved. Do not apply a sample fix
+  unless it addresses a finding on this page.
+*/
+
 /* Stack the main sections on phones; keep two trip columns on tablets. */
 @media (max-width: 900px) {
   .wrap { width: calc(100% - 48px); }
