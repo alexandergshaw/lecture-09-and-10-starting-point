@@ -9,6 +9,14 @@
     <link rel="stylesheet" href="styles.css">
   </head>
   <body>
+    <!--
+      SLIDE 6: Open this existing repository and use this page as the audit
+      target. Do not create a new site or project.
+
+      SLIDES 9–12: Inspect the existing images, links, buttons, headings, form
+      controls (if any), and landmarks. Choose one real element and make one
+      accessibility improvement in its HTML.
+    -->
     <a class="skip-link" href="#main">Skip to content</a>
     <header class="site-header wrap">
       <a class="wordmark" href="./" aria-label="Fieldnotes home"><span aria-hidden="true">↟</span> fieldnotes<span class="brand-dot">.</span></a>
@@ -25,10 +33,24 @@
           <p class="eyebrow"><span class="status-dot" aria-hidden="true"></span> Less screen time. More green time.</p>
           <h1 id="hero-title">A little closer<br>to <em>outside.</em></h1>
           <p class="intro">You don’t need a plane ticket to feel far away. Discover small adventures and wide-open spaces, one day trip at a time.</p>
+          <!--
+            SLIDE 9: This destination is navigation, so an anchor is appropriate.
+            Use a button for an action, not for navigation. A generic div is not
+            an interactive control:
+            <div class="button">Order</div>
+            <button type="button">Order</button>
+          -->
           <a class="button" href="#trails">Find your next escape <span aria-hidden="true">↗</span></a>
           <p class="hero-note">Made for slow mornings &amp; the scenic route.</p>
         </div>
         <figure class="hero-art">
+          <!--
+            SLIDE 10: Decide whether this image communicates information or is
+            decorative. This illustration has descriptive alt text because it
+            communicates the scene. For an informative photo, describe its
+            relevant content (for example: alt="Tomato basil soup in a white
+            bowl"). For a purely decorative image, use alt="".
+          -->
           <img src="landscape.svg" width="720" height="800" alt="Illustration of layered mountain peaks, evergreen trees, and a quiet lake beneath the sun.">
           <figcaption><span>THE PACIFIC NORTHWEST</span><span>47° N / 122° W</span></figcaption>
           <span class="art-label" aria-hidden="true">TAKE THE<br>LONG WAY HOME</span>
@@ -105,6 +127,32 @@
         </ul>
       </section>
     </main>
+    <!--
+      SLIDE 15: Form-label coding walkthrough. This page has no form, so use
+      these examples as a pattern rather than adding a nonfunctional form:
+
+      Before:
+      <input type="email" placeholder="Email">
+
+      After: the label's for value must match the input's id.
+      <label for="email">Email</label>
+      <input id="email" type="email">
+
+      SLIDES 14, 16, 18: Run this existing page through WAVE. For each finding,
+      identify the affected element, find its HTML and any relevant CSS, and
+      trace the cause to the source before changing it.
+
+      SLIDE 15: Save each code change, refresh the page, rerun WAVE, and verify
+      that the original finding is no longer reported.
+
+      SLIDES 16, 18, 19: For Homework 4, document and fix at least three
+      different WAVE issues. For every issue, record the flagged element, the
+      relevant code change, and the retest result. Verify each fix against the
+      original finding.
+
+      SLIDES 19–20: Commit and push the version containing all three fixes.
+      Submit the URL of the updated GitHub repository.
+    -->
     <footer class="site-footer wrap">
       <a class="wordmark" href="./">↟ fieldnotes<span class="brand-dot">.</span></a>
       <p>A little less scrolling. A little more strolling.</p>
