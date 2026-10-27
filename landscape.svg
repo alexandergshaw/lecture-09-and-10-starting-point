@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="800" viewBox="0 0 720 800">
+  <defs>
+    <linearGradient id="sky" x2="0" y2="1">
+      <stop stop-color="#dfebd5"/>
+      <stop offset="1" stop-color="#f0dbad"/>
+    </linearGradient>
+    <linearGradient id="water" x2=".7" y2="1">
+      <stop stop-color="#9bb6a1"/>
+      <stop offset="1" stop-color="#507c70"/>
+    </linearGradient>
+    <g id="tree">
+      <path d="M0 0 20 48 10 46 29 82 15 79 38 121H-38L-15 79-29 82-10 46-20 48Z"/>
+      <path d="M-3 100H3V143H-3Z"/>
+    </g>
+  </defs>
+  <path fill="url(#sky)" d="M0 0h720v800H0z"/>
+  <circle cx="509" cy="170" r="63" fill="#f7edcb"/>
+  <path d="m0 390 120-145 93 91 127-187 154 196 80-83 146 117v421H0Z" fill="#9eafa0"/>
+  <path d="m272 250 68-101 82 105-66-34-22 25-18-17Z" fill="#e1e3cc"/>
+  <path d="m0 439 173-108 113 105 165-140 269 169v335H0Z" fill="#728e7e"/>
+  <path d="m0 510 176-60 151 64 222-112 171 72v326H0Z" fill="#436d5c"/>
+  <path d="M720 503c-169-26-200 58-340 82S139 610 0 638v162h720Z" fill="url(#water)"/>
+  <path d="M0 545c91-15 134 4 200 27l-71 41L0 635Z" fill="#294f40"/>
+  <g fill="#234a3c">
+    <use href="#tree" transform="translate(24 368) scale(1.7)"/>
+    <use href="#tree" transform="translate(98 412) scale(1.3)"/>
+    <use href="#tree" transform="translate(158 467) scale(.8)"/>
+    <use href="#tree" transform="translate(687 374) scale(1.4)"/>
+    <use href="#tree" transform="translate(637 420) scale(.9)"/>
+  </g>
+  <g fill="none" stroke="#cfddc5" stroke-linecap="round" opacity=".5">
+    <path d="M353 617h126m-214 40h120m90 33h157m-418 37h159m-90 39h302"/>
+    <path d="M408 602h47m-11 38h82m-173 55h41m-90 66h73"/>
+  </g>
+  <path d="M0 746c107-30 177 2 263 54H0Z" fill="#254c3d"/>
+  <g fill="#1e4236">
+    <use href="#tree" transform="translate(19 579) scale(1.8)"/>
+    <use href="#tree" transform="translate(94 664) scale(1.2)"/>
+    <use href="#tree" transform="translate(696 643) scale(1.6)"/>
+  </g>
+</svg>
